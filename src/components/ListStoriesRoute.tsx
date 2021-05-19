@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { StoryContext } from '../context/madlib-context';
 import { Link } from 'react-router-dom';
-import Story from '../model/Story';
+
 
 
 function ListStoriesRoute () {

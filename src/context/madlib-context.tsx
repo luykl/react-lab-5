@@ -21,7 +21,10 @@ export const StoryContext = createContext(defaultValue);
 
 
 export function StoryContextProvider({ children }: { children: ReactNode }) {
-  const [ stories, setStories ] = useState<Story[]>([{title:"Hello World", words:["silly", "empty", "yellow", "sad"]}
+  const [ stories, setStories ] = useState<Story[]>([
+    {title:"A Blue Story by Sam", words:["red", "yellow", "green", "blue"]},
+    {title:"A Hungry Story by Heather", words:["weird", "smooth", "windy", "hungry"]}
+    
   ]);
 
   function addStory(story:Story):number {

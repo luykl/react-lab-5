@@ -5,6 +5,7 @@ import { useHistory } from 'react-router';
 
 
 
+
 function CreateStoryRoute() {
 
     const { addStory } = useContext(StoryContext);
@@ -19,7 +20,7 @@ function CreateStoryRoute() {
     function handleSubmit(e:FormEvent) {
         e.preventDefault();
         const story:Story = {
-            title: `${adj2} by ${name}`,
+            title: `A ${feeling.charAt(0).toUpperCase() + feeling.slice(1)} Story by ${name}`,
             words: [adj, adj2, adj3, feeling]
         };
         

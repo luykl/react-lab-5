@@ -2,6 +2,32 @@ body {
     margin:20px;
     text-align: center;
     font-family: sans-serif;
+    background-image: linear-gradient(0deg, #ffffff 47.62%, #c9dcff 47.62%, #c9dcff 50%,
+     #ffffff 50%, #ffffff 97.62%, #c9dcff 97.62%, #c9dcff 100%);
+     background-size: 42.00px 42.00px;
+}
+
+ul {
+    list-style: none;
+    margin: 20px auto;
+    padding: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
+    max-width: 300px;
+}
+
+a {
+    color:navy;
+}
+
+a:visited {
+    color:navy;
+}
+
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 

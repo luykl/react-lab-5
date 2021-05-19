@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 // import Coke from './components/Coke'
 // import Pepsi from './components/Pepsi'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 import ListStoriesRoute from './components/ListStoriesRoute';
 import ViewStoryRoute from './components/ViewStoryRoute';
 import CreateStoryRoute from './components/CreateStoryRoute';
@@ -30,6 +30,9 @@ function App() {
             </Route>
             <Route path="/create-story">
               <CreateStoryRoute />
+            </Route>
+            <Route path="/">
+              <Redirect to="/stories"/>
             </Route>
         </Switch>
       </Router>

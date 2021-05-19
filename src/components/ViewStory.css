@@ -1,3 +1,15 @@
 .insert {
     font-family: monospace;
+    font-size: 1.5em;
+    padding: .25em;
+    color: darkred;
+}
+
+h2 {
+    margin-top: 27px;
+    margin-bottom: 17px;
+}
+
+.storyPara {
+    line-height: 25px;
 }
